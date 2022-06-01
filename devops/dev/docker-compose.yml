@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  wechat-mysql:
+    container_name: "wechat-mysql"
+    image: mysql
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+  wechat-rabbitmq:
+    image: rabbitmq:3.10
+    ports:
+      - 5672:5672
+      - 15672:15672

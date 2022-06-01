@@ -1,0 +1,15 @@
+server:
+  port: ${eureka.port:8080}
+spring:
+  application:
+    name: server-eureka
+
+eureka:
+  client:
+    #关闭当前的客户端功能（单机时关闭）
+    register-with-eureka: false
+    #关闭拉取服务信息
+    fetch-registry: false
+  server:
+    #关闭自我保护功能
+    enable-self-preservation: false

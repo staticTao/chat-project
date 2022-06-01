@@ -9,8 +9,8 @@
         <module name="server-gateway" />
         <module name="server-eureka" />
         <module name="server-boot-admin" />
-        <module name="server-config" />
         <module name="service-instances" />
+        <module name="server-config" />
         <module name="service-common" />
         <module name="service-api" />
       </profile>
